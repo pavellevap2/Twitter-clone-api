@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { AuthModule } from './auth/auth/auth.module';
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
         DATABASE_PORT: Joi.number().default(5432),
       }),
     }),
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
