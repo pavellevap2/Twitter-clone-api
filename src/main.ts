@@ -18,8 +18,8 @@ async function bootstrap() {
   );
 
   const options = new DocumentBuilder()
-    .setTitle('Iluvcoffee')
-    .setDescription('Coffee application')
+    .setTitle('twitter')
+    .setDescription('Twitter clone api')
     .setVersion('1.0')
     .build();
 
